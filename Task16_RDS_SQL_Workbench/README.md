@@ -14,13 +14,12 @@ Create an RDS database instance, connect using SQL Workbench, and execute basic 
 2. Configure connectivity
    - Public access: Yes
    - Select default VPC
-   - Create new security group
    - Allow inbound rule: MySQL/Aurora (Port 3306) from your IP
 
 3. Launch database and wait until status becomes Available.
 
 4. Note the endpoint
-   - RDS → Connectivity & security → Endpoint
+   - RDS → Connectivity & security → Endpoint then copy the endpointurl 
 
 5. Open SQL Workbench
    - Create new connection
@@ -38,18 +37,10 @@ Create an RDS database instance, connect using SQL Workbench, and execute basic 
    USE testdb;
 
 9. Create table
-   CREATE TABLE students (
-       id INT PRIMARY KEY,
-       name VARCHAR(50),
-       age INT
-   );
 
 10. Insert records
-    INSERT INTO students VALUES (1,'John',22);
-    INSERT INTO students VALUES (2,'Alice',21);
 
 11. Retrieve data
-    SELECT * FROM students;
 
 ## Result
 Successfully connected to the RDS database and executed SQL queries with data stored and retrieved.
