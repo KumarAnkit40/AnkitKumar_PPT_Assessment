@@ -1,0 +1,7 @@
+ssh -i mykey.pem ubuntu@<instance-Public-IP>(for securely log in to the EC2 Ubuntu server)
+sudo apt update (for updating package manager)
+sudo apt upgrade -y
+sudo apt install nginx -y (for installing nginx webserver)
+sudo systemctl status nginx ( for checking nginx server)
+cd /var/www/html (for going inside this directory)
+sudo nano index.html (for writing code in index.html file)

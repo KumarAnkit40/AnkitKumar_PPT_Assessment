@@ -1,0 +1,2 @@
+# No CLI commands required
+# All configuration performed through AWS Management Console

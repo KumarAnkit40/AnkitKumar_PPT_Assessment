@@ -1,0 +1,13 @@
+CREATE DATABASE testdb;
+USE testdb;
+
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+INSERT INTO students VALUES (1,'John',22);
+INSERT INTO students VALUES (2,'Alice',21);
+
+SELECT * FROM students;

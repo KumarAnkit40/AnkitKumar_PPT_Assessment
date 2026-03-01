@@ -1,0 +1,18 @@
+ssh -i keypair.pem ubuntu@<Public-IP>
+
+lsblk
+sudo mkfs.ext4 /dev/xvdf
+
+sudo mkdir /data
+sudo mount /dev/xvdf /data
+
+sudo umount /data
+
+# On second EC2
+ssh -i keypair.pem ubuntu@<Public-IP>
+
+lsblk
+sudo mkdir /data
+sudo mount /dev/xvdf /data
+
+cat /data/test.txt

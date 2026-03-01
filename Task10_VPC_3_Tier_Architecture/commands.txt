@@ -1,0 +1,5 @@
+# Connect to Bastion Host
+ssh -i keypair.pem ubuntu@<Bastion-Public-IP>
+
+# From Bastion connect to private instance
+ssh -i keypair.pem ubuntu@<Private-Instance-IP>

@@ -1,0 +1,5 @@
+# Example curl command
+
+curl -X POST <Invoke-URL> \
+-H "Content-Type: application/json" \
+-d '{ "action": "start" }'

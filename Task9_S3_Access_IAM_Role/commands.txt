@@ -1,0 +1,11 @@
+ssh -i keypair.pem ubuntu@<Public-IP>
+
+sudo apt update -y
+sudo apt install awscli -y
+
+aws sts get-caller-identity
+aws s3 ls
+
+echo "IAM Role Access Working" > test.txt
+
+aws s3 cp test.txt s3://<bucket-name>/

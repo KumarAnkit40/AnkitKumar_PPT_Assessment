@@ -1,0 +1,15 @@
+# On both EC2 instances
+
+ssh -i keypair.pem ubuntu@<Public-IP>
+
+sudo apt update -y
+sudo apt install nfs-common -y
+
+sudo mkdir /mnt/efs
+sudo mount -t nfs4 -o nfsvers=4.1 <EFS-DNS>:/ /mnt/efs
+
+# On first instance
+echo "Shared Storage Working" | sudo tee /mnt/efs/test.txt
+
+# On second instance
+cat /mnt/efs/test.txt

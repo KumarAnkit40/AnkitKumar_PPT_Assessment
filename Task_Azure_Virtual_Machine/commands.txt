@@ -1,0 +1,3 @@
+ssh azureuser@<Public-IP>
+
+whoami
