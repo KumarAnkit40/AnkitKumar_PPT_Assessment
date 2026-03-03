@@ -1,0 +1,3 @@
+chmod 400 mykey.pem
+ssh -i mykey.pem ubuntu@<bastion public IP>
+ssh mykey.pem ubuntu@<private instances private IP>

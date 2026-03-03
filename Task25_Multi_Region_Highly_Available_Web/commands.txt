@@ -1,0 +1,7 @@
+sudo apt update -y
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo apt install stress -y
+stress --cpu 2 --timeout 300
+ssh -i mykey.pem ubuntu@<publicipof bastion>

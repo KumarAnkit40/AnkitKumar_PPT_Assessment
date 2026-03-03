@@ -1,0 +1,2 @@
+# No CLI commands required for this task 
+# I have used aws management console UI and Azure UI to do all of that.
